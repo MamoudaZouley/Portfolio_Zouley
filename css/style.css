@@ -72,7 +72,7 @@ section {
 .hero-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3rem;
   min-height: 70vh;
   text-align: center;
@@ -95,7 +95,6 @@ section {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   object-fit: cover;
   border: 8px solid #fff;
-  margin-left: 87px;
 
 }
 
