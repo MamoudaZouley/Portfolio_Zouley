@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zouley Mamouda Mahaman - Portfolio</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER FIXE -->
+  <header>
+    <div class="container header-content">
+      <h1>Zouley <span>MAMOUDA MAHAMAN</span></h1>
+      <nav>
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Je suis  <strong>Zouley Mamouda Mahaman</strong>, ingénieure développeuse.
+Passionée par la technologie et l'innovation sociale, je conçois
+  des solutions numériques au service du dévéloppement.
+        </h2>
+        <a href="#projets" class="btn-primary">Voir mes projets</a>
+      </div>
+      <div class="hero-img">
+      <img src="image/code.jpg" alt="développement">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION À PROPOS -->
+  <section id="apropos" class="about-section">
+    <div class="container">
+      <h3 class="section-title"><span>À propos</span></h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Je m'appelle <strong>Zouley Mamouda Mahaman</strong>, passionné par la création de sites web modernes et interactifs.</.</p>
+          <p>Je suis actuellement étudiante en développement web, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+          <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+          <p><strong>Hobbies :</strong> lecture, voyage, cuisine</p>
+          <a href="CV_Zouley_Mamouda_Mahaman.pdf" class="btn-primary" download>Télécharger mon CV</a>
+        </div>
+        <div class="about-img">
+          <img src="image/zouley.jpg" alt="Photo de Zouley" class="profile-pic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PROJETS -->
+  <section id="projets" class="projects-section">
+    <div class="container">
+      <h3 class="section-title"><span>Mes Projets</span></h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <p>smartGov - Plateforme de gouvernance numérique pour les administrations locales.</p>
+          <p class="tags">#html, #css, #js</p>
+          <a href="#" class="btn-small open-modal" data-project="smartGov">Voir</a>
+        </div>
+        <div class="project-card">
+          <p>Mentor'Elle Niger - Site de mentorat pour jeunes femmes entrepreneures.</p>
+          <p class="tags">#html, #css, #js</p>
+          <a href="#" class="btn-small open-modal" data-project="mentor">Voir</a>
+        </div>
+        <div class="project-card">
+          <p>Dan Gomki Electronic Center - Boutique en ligne d'électroménagers.</p>
+          <p class="tags">#html, #css, #js</p>
+          <a href="#" class="btn-small open-modal" data-project="center">Voir</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modales cachées -->
+     <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">x</span>
+        <div id="modal-body">
+         <!-- Contenu injecté via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION COMPÉTENCES -->
+  <section id="competences" class="skills-section">
+    <div class="container">
+      <h3 class="section-title"><span>Mes Compétences</span></h3>
+      <div class="skills-grid">
+        <div class="soft-skills">
+          <h4>Soft Skills</h4>
+          <div class="skill"><span>Gestion de projet</span><div class="bar"><div class="fill" style="width: 75%;"></div></div></div>
+          <div class="skill"><span>Géstion du stress</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+          <div class="skill"><span>Adaptabilité</span><div class="bar"><div class="fill" style="width: 70%;"></div></div></div>
+          <div class="skill"><span>Esprit d'équipe</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+        </div>
+        <div class="hard-skills">
+          <h4>Hard Skills</h4>
+          <div class="skill"><span>HTML</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+          <div class="skill"><span>CSS</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+          <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="width: 70%;"></div></div></div>
+          <div class="skill"><span>VS Code</span><div class="bar"><div class="fill" style="width: 95%;"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h3 class="section-title">Vous avez un <span>projet en tête ?</span><br>N'hésitez pas à me <span>contacter</span></h3>
+      <form id="contactForm">
+        <div class="form-grid">
+          <input type="text" id="prenom" placeholder="Votre prénom" required />
+          <input type="text" id="nom" placeholder="Votre nom" required />
+        </div>
+        <input type="email" id="email" placeholder="Votre email" required />
+        <input type="text" id="sujet" placeholder="Votre sujet" required />
+        <textarea id="message" placeholder="Votre message..." rows="6" required></textarea>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>Designed by Zouley with HTML CSS JS</p>
+      <p>Tous droits réservés - 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
